@@ -1,0 +1,1302 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="img/twiceicon.jpg" type="image/jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&display=swap" 
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>TWICE</title>
+  <style>
+    header{
+      background: url(img/Moonlight\ Sunrise\ \ 6K.png);
+      background-size: cover;
+      background-position: center;
+      min-height: 100%;     
+    }
+    header .brand-logo, header .sidenav-trigger{
+      font-weight: 700;
+      letter-spacing: 3px;
+      font-size: 2em;
+      color:  #FF5FA2 ;
+      font-family: 'Merriweather', serif;
+    }
+    
+    header .navbar-fixed{
+      height: 0%;
+    }
+    
+    header .ul-text{
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    header .nav-wrapper{
+      background: url(img/snapedit_1695445809260.png);
+    }
+    .tabs .indicator{
+      background-color: #f06292;
+    }
+    .tabs .tab a:hover, .tabs .tab a.active{
+    background-color: transparent;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+    body{
+      background: url(img/snapedit_1695445809260.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;      
+      height: 100vh;
+      width: auto;
+      padding-right: 0;
+     
+    }
+    .carousel{
+      height: 600px;
+      perspective: 250px;
+    }
+    .carousel .carousel-item{
+      width: 450px;
+    }
+    .carousel .carousel-item .img{
+      width: 100%;
+    }
+    div .card .card-image .jihyo-text, div .jihyo-text{
+      color:  #FFC56E;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-family: 'Libre Baskerville', serif;
+      
+    }
+    div .card .card-image .nay-text, div .nay-text{
+      color:#5BC2E7;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    div .card .card-image .jeong-text, div .jeong-text{
+      color: #C5D97A ;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    div .card .card-image .momo-text, div .momo-text{
+      color: #FF8DA1 ;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    div .card .card-image .sana-text, div .sana-text{
+      color: #9B7DD4 ;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    div .card .card-image .mina-text, div .mina-text{
+      color: #6DCDB8 ;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    div .card .card-image .dahyun-text, div .dahyun-text{
+      color: #9b9b9b ;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    div .card .card-image .chae-text, div .chae-text{
+      color:  #EE2737  ;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    div .card .card-image .tzu-text, div .tzu-text{
+      color: #005EB8 ;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    section .twice-text, footer .twice-text{
+      font-family: 'Merriweather', serif;
+      letter-spacing: 2px;
+      color:  #FF5FA2 ;
+    }
+    section .p-text, div .card-text{
+      font-family: 'AR One Sans', sans-serif;
+      letter-spacing: 1px;
+    }
+    header .twice-text{
+      font-family: 'Roboto Mono', monospace;
+      letter-spacing: 1px;
+      color:  #FF5FA2 ;
+      
+    }
+    footer{
+      background: url(img/snapedit_1695445809260.png);
+      
+    }
+    footer .p-text{
+      font-family: 'AR One Sans', sans-serif;
+      letter-spacing: 1px;
+      color:  #FF5FA2 ;
+    }
+    footer .footer-copyright{
+      font-family: 'Roboto Mono', monospace;
+      letter-spacing: 4px;
+    }
+    header .sidenav{
+      font-family: 'Roboto Mono', monospace;
+      letter-spacing: 1px;
+      color:  #FF5FA2 ;
+      background: url(img/snapedit_1695445809260.png);
+    }
+  </style>
+</head>
+<body>
+  
+
+  <!-- navbar -->
+  <header id="home">
+    <div class="navbar-fixed">   
+      <nav class="nav-wrapper">      
+        <div class="container">
+          <a href="#home" class="brand-logo">TWICE</a>
+          <a href="" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down ">
+            <li><a href="#members" class="ul-text twice-text">Members</a></li>
+            <li><a href="#videos" class="ul-text twice-text" >Videos</a></li>
+            <li><a href="#awards" class="ul-text twice-text" >Awards</a></li>
+            <li><a href="https://www.instagram.com/twicetagram/" class="tooltipped btn-floating btn-med pink lighten-2" data-tooltip="Instagram">
+              <i class="fab fa-instagram"></i>  
+            </a></li>
+            <li><a href="https://web.facebook.com/JYPETWICE" class="tooltipped btn-floating btn-med pink lighten-2" data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i>  
+            </a></li>
+            <li><a href="https://x.com/JYPETWICE?s=20" class="tooltipped btn-floating btn-med pink lighten-2" data-tooltip="Twitter">
+              <i class="fab fa-twitter"></i>  
+            </a></li>
+            <li><a href="https://www.youtube.com/@TWICE" class="tooltipped btn-floating btn-med pink lighten-2" data-tooltip="Youtube">
+              <i class="fab fa-youtube"></i>  
+            </a></li>
+          </ul>
+          
+        </div>     
+      </nav>
+    </div>
+    <ul class="sidenav right" id="mobile-menu">
+      <li><a href="#members" class="sidenav-close ">Members</a></li>
+      <li><a href="#videos" class="sidenav-close ">Videos</a></li>
+      <li><a href="#awards" class="sidenav-close ">Awards</a></li>
+      <li><a href="https://www.instagram.com/twicetagram/" class="tooltipped btn btn-small pink lighten-3" data-tooltip="Instagram">
+        <i class="fab fa-instagram">Instagram</i>  
+      </a></li>
+      <li><a href="https://web.facebook.com/JYPETWICE" class="tooltipped btn btn-small pink lighten-3" data-tooltip="Facebook">
+        <i class="fab fa-facebook ">Facebook</i>  
+      </a></li>
+      <li><a href="https://x.com/JYPETWICE?s=20" class="tooltipped btn btn-small pink lighten-3" data-tooltip="Twitter">
+        <i class="fab fa-twitter">Twitter</i>  
+      </a></li>
+      <li><a href="https://www.youtube.com/@TWICE" class="tooltipped btn btn-small pink lighten-3" data-tooltip="Youtube">
+        <i class="fab fa-youtube">Youtube</i>  
+      </a></li>
+    </ul>
+            
+  </header>
+
+  <!-- member cards -->
+  <section class="container section scrollspy" id="members">
+    <h2 class="center pink-text text-lighten-2 twice-text">TWICE Members:</h2>
+    <div class="row">
+      <h4 class="center pink-text text-lighten-2 twice-text ">3mix:</h4>
+      <div class="col s6 l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/jihyocard.jpg" alt="">
+            <span class="card-title hide-on-med-and-down jihyo-text">JIHYO</span>
+          </div>
+          <div class="card-content hide-on-large-only jihyo-text">JIHYO</div>
+          <div class="card-action">
+            <a href="#jihyo" class="pink-text text-lighten-1 btn transparent card-text">PROFILE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/nayeoncard2.jpg" alt="">
+            <span class="card-title hide-on-med-and-down nay-text">NAYEON</span>
+          </div>
+          <div class="card-content hide-on-large-only nay-text">NAYEON</div>
+          <div class="card-action">
+            <a href="#nayeon" class="pink-text text-lighten-1 btn transparent card-text">PROFILE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l4 offset-s3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/jeongcard.jpg" alt="">
+            <span class="card-title hide-on-med-and-down jeong-text">JEONGYEON</span>
+          </div>
+          <div class="card-content hide-on-large-only jeong-text">JEONGYEON</div>
+          <div class="card-action">
+            <a href="#jeongyeon" class="pink-text text-lighten-1 btn transparent card-text">PROFILE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4 class="center pink-text text-lighten-2 twice-text">MISAMO:</h4>
+      <div class="col s6 l4">       
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/momocard.jpg" alt="">
+            <span class="card-title hide-on-med-and-down momo-text">MOMO</span>
+          </div>
+          <div class="card-content hide-on-large-only momo-text">MOMO</div>
+          <div class="card-action">
+            <a href="#momo" class="pink-text text-lighten-1 btn transparent card-text">PROFILE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/sanacard.jpg" alt="">
+            <span class="card-title hide-on-med-and-down sana-text">SANA</span>
+          </div>
+          <div class="card-content hide-on-large-only sana-text">SANA</div>
+          <div class="card-action">
+            <a href="#sana" class="pink-text text-lighten-1 btn transparent card-text">PROFILE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l4 offset-s3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/minacard2.jpg" alt="">
+            <span class="card-title hide-on-med-and-down mina-text">MINA</span>
+          </div>
+          <div class="card-content hide-on-large-only mina-text">MINA</div>
+          <div class="card-action">
+            <a href="#mina" class="pink-text text-lighten-1 btn transparent card-text">PROFILE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4 class="center pink-text text-lighten-2 twice-text">School Meal Club:</h4>
+      <div class="col s6 l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/dahyuncard.jpg" alt="">
+            <span class="card-title hide-on-med-and-down dahyun-text">DAHYUN</span>
+          </div>
+          <div class="card-content hide-on-large-only dahyun-text">DAHYUN</div>
+          <div class="card-action">
+            <a href="#dahyun" class="pink-text text-lighten-1 btn transparent card-text">PROFILE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/chaecard.jpg" alt="">
+            <span class="card-title hide-on-med-and-down chae-text">CHAEYOUNG</span>
+          </div>
+          <div class="card-content hide-on-large-only chae-text">CHAEYOUNG</div>
+          <div class="card-action">
+            <a href="#chaeyoung" class="pink-text text-lighten-1 btn transparent card-text">PROFILE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l4 offset-s3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="img/tzucard.jpg" alt="">
+            <span class="card-title hide-on-med-and-down tzu-text">TZUYU</span>
+          </div>
+          <div class="card-content hide-on-large-only tzu-text">TZUYU</div>
+          <div class="card-action">
+            <a href="#tzuyu" class="pink-text text-lighten-1 btn transparent card-text">PROFILE</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container hide-on-med-and-down">
+    <div class="parallax">
+      <img src="img/moonlightparallax.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- members profile -->
+  <section class="container section scrollspy" >
+    <h2 class="center pink-text text-lighten-2 twice-text">Members Profile:</h2>
+    <br>
+    <br>
+    <br>
+    <div class="column">
+      <div class="col s12 l6 carousel carousel-slider center scrollspy" id="jihyo">
+        <a href="#one!" class="carousel-item "><img src="img/jihcar7.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item "><img src="img/jihcar6.jpg" alt=""></a>
+        <a href="#three!" class="carousel-item "><img src="img/jihcar8.jpg" alt=""></a>
+               
+      </div>
+      <div class="col s12 l4 offset-l2 scrollspy">
+        <h2 class="center jihyo-text">JIHYO</h2>
+        <p class="center-align p-text">
+          Stage Name: Jihyo (지효)
+          <br>
+          Birth Name: Park Ji Soo (박지수) but legalized her name to Park Ji Hyo (박지효)
+          <br>
+          Nationality: Korean
+          <br>
+          Position: Leader, Main Vocalist
+          <br>
+          Birthday: February 1, 1997
+          <br>
+          Zodiac sign: Aquarius
+          <br>
+          Official Height: 162 cm (5 ft 3¾ in) / Approx. Real Height: 160 cm (5’3″)
+          <br>
+          Official Weight: 56 kg (123 lbs) / Approx. Real Weight: 49 kg (108 lbs)
+          <br>
+          Blood Type: O
+          <br>
+          MBTI Type: ESFP-T (Her previous result was ISFP-T)
+          <br>
+          Representative Emoji: 🦄
+          <br>
+          Instagram:  <a href="https://www.instagram.com/_zyozyo/" class="pink-text text-lighten-2" >_zyozyo</a></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="column">
+      <div class="col s12 l6 carousel carousel-slider center scrollspy" id="nayeon">
+        <a href="#one!" class="carousel-item"><img src="img/naycar1.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item"><img src="img/naycar2.jpg" alt=""></a>
+        <a href="#three!" class="carousel-item "><img src="img/naycar3.jpg" alt=""></a>        
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h2 class="center nay-text">NAYEON</h2>
+        <p class="center-align p-text">
+          Stage Name: Nayeon (나연)
+          <br>
+          Birth Name: Im Na Yeon (임나연)
+          <br>
+          Nationality: Korean
+          <br>
+          Position: Lead Vocalist, Lead Dancer, Center, Face of the Group
+          <br>
+          Birthday: September 22, 1995
+          <br>
+          Zodiac Sign: Virgo
+          <br>
+          Height: 163 cm (5’4″)
+          <br>
+          Weight: 47 kg (104 lbs)
+          <br>
+          Blood Type: A
+          <br>
+          MBTI Type: ISFP (Her former result was ISTP-A)
+          <br>
+          Representative Emoji: 🐰
+          <br>
+          Instagram:<a href="https://www.instagram.com/nayeonyny/" class="pink-text text-lighten-2" > nayeonyny</a></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="column">
+      <div class="col s12 l6 carousel carousel-slider center scrollspy" id="jeongyeon" >
+        <a href="#one!" class="carousel-item"><img src="img/jeongcar1.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item"><img src="img/jeongcar2.jpg" alt=""></a> 
+        <a href="#three!" class="carousel-item "><img src="img/jeongcar4.jpg" alt=""></a>        
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h2 class="center jeong-text">JEONGYEON</h2>
+        <p class="center-align p-text">
+          Stage Name: Jeongyeon (정연)
+          <br>
+          Birth Name: Yoo Kyung Wan (유경완), but she legalized her name to Yoo Jeong Yeon (유정연)
+          <br>
+          Nationality: Korean
+          <br>
+          Position: Lead Vocalist
+          <br>
+          Birthday: November 1, 1996
+          <br>
+          Zodiac Sign: Scorpio
+          <br>
+          Official Height: 169 cm (5’7″) / Real Height: 167 cm (5’6″)
+          <br>
+          Weight: 50 kg (110 lbs)
+          <br>
+          Blood Type: O
+          <br>
+          MBTI Type: ISFJ (Her previous result was ISFP)
+          <br>
+          Representative Emoji: 🐶
+          <br>         
+          Instagram:  <a href="https://www.instagram.com/jy_piece/" class="pink-text text-lighten-2" >jy_piece</a></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="column">
+      <div class="col s12 l6 carousel carousel-slider center scrollspy" id="momo" >
+        <a href="#one!" class="carousel-item"><img src="img/momocar1.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item"><img src="img/momocar2.jpg" alt=""></a>
+        <a href="#three!" class="carousel-item "><img src="img/momocar3.jpg" alt=""></a>        
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h2 class="center momo-text">MOMO</h2>
+        <p class="center-align p-text">
+          Stage Name: Momo (모모)
+          <br>
+          Birth Name: Hirai Momo (平井 もも)
+          <br>
+          English Name: Peach
+          <br>
+          Nationality: Japanese
+          <br>
+          Position: Main Dancer, Sub Vocalist, Sub Rapper
+          <br>
+          Birthday: November 9, 1996
+          <br>
+          Zodiac Sign: Scorpio
+          <br>
+          Official Height: 167 cm (5’6″) /Real Height: 163 cm (5’4″)
+          <br>
+          Weight: 48.5 kg (106 lbs)
+          <br>
+          Blood Type: A
+          <br>
+          MBTI Type: INFP-T
+          <br>
+          Representative Emoji: 🍑
+          <br>
+          
+          Instagram:  <a href="https://www.instagram.com/momo/" class="pink-text text-lighten-2" >momo</a></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="column">
+      <div class="col s12 l6 carousel carousel-slider center scrollspy" id="sana" >
+        <a href="#one!" class="carousel-item"><img src="img/sanacar3.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item"><img src="img/sanacar2.jpg" alt=""></a> 
+        <a href="#three!" class="carousel-item "><img src="img/sanacar1.jpg" alt=""></a>       
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h2 class="center sana-text">SANA</h2>
+        <p class="center-align p-text">
+          Stage Name: Sana (사나)
+          <br>
+          Birth Name: Minatozaki Sana (湊崎 紗夏)
+          <br>
+          Nationality: Japanese
+          <br>
+          Position: Sub Vocalist
+          <br>
+          Birthday: December 29, 1996
+          <br>
+          Zodiac Sign: Capricorn
+          <br>
+          Official Height: 168 cm (5’6″) / Approx. Real Height: 163 cm (5’4″)
+          <br>
+          Weight: 47 kg (104 lbs)
+          <br>
+          Blood Type: B
+          <br>
+          MBTI Type: ENFP
+          <br>
+          Representative Emoji: 🐹
+          <br>
+          Instagram:  <a href="https://www.instagram.com/m.by__sana/" class="pink-text text-lighten-2" >m.by__sana</a></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="column">
+      <div class="col s12 l3 carousel carousel-slider center scrollspy" id="mina" >
+        <a href="#one!" class="carousel-item"><img src="img/minacar1.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item"><img src="img/minacar2.jpg" alt=""></a>
+        <a href="#three!" class="carousel-item "><img src="img/minacar3.jpg" alt=""></a>        
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h2 class="center mina-text">MINA</h2>
+        <p class="center-align p-text">
+          Stage Name: Mina (미나)
+          <br>
+          Birth Name: Myoui Mina (名井 南)
+          <br>
+          English Name: Sharon
+          <br>
+          Current/Legal Nationality: Japanese
+          <br>
+          Birth Nationality: Japanese-American
+          <br>
+          Position: Main Dancer, Sub Vocalist
+          <br>
+          Birthday: March 24, 1997
+          <br>
+          Zodiac Sign: Aries
+          <br>
+          Height: 163 cm (5’4″)
+          <br>
+          Weight: 46 kg (101 lbs)
+          <br>
+          Blood Type: A
+          <br>
+          MBTI Type: ISTP (Her previous result was ISFP-T)
+          <br>
+          Representative Emoji: 🐧
+          <br>
+          
+          Instagram:  <a href="https://www.instagram.com/mina_sr_my/" class="pink-text text-lighten-2" >mina_sr_my</a></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="column">
+      <div class="col s12 l6 carousel carousel-slider center scrollspy" id="dahyun" >
+        <a href="#one!" class="carousel-item"><img src="img/dahcar1.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item"><img src="img/dahcar2.jpg" alt=""></a>
+        <a href="#three!" class="carousel-item "><img src="img/dahcar4.jpg" alt=""></a>        
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h2 class="center dahyun-text">DAHYUN</h2>
+        <p class="center-align p-text">
+          Stage Name: Dahyun (다현)
+          <br>
+          Birth Name: Kim Da Hyun (김다현)
+          <br>
+          Nationality: Korean
+          <br>
+          Position: Lead Rapper, Sub Vocalist
+          <br>
+          Birthday: May 28, 1998
+          <br>
+          Zodiac Sign: Gemini
+          <br>
+          Official Height: 165 cm (5’5″) / Real Height: 161 cm (5’3″)
+          <br>
+          Weight: 48.9 kg (108 lbs)
+          <br>
+          Blood Type: O
+          <br>
+          MBTI Type: ISFJ-T
+          <br>
+          Representative Emoji: 🤍
+          <br>
+          
+          Instagram:  <a href="https://www.instagram.com/dahhyunnee/" class="pink-text text-lighten-2" >dahhyunnee</a></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="column chaecar">     
+      <div class="col s12 l6 carousel carousel-slider center scrollspy" id="chaeyoung" >
+        <a href="#one!" class="carousel-item"><img src="img/chaecar1.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item"><img src="img/chaecar4.jpg" alt=""></a>
+        <a href="#three!" class="carousel-item "><img src="img/chaecar3.jpg" alt=""></a>        
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h2 class="center chae-text">CHAEYOUNG</h2>
+        <p class="center-align p-text">
+          Stage Name: Chaeyoung (채영)
+          <br>
+          Birth Name: Son Chae Young (손채영)
+          <br>
+          English Name: Katrina
+          <br>
+          Nationality: Korean
+          <br>
+          Position: Main Rapper, Sub Vocalist
+          <br>
+          Birthday: April 23, 1999
+          <br>
+          Zodiac Sign: Taurus
+          <br>
+          Official Height: 163 cm (5’4″) / Real Height: 158.9 cm (5’3″)*
+          <br>
+          Weight: 46 kg (101 lbs)
+          <br>
+          Blood Type: B
+          <br>
+          MBTI Type: INFP-T
+          <br>
+          Representative Emoji: 🍓
+          <br>
+          
+          Instagram:  <a href="https://www.instagram.com/chaeyo.0/" class="pink-text text-lighten-2" >chaeyo.0</a></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="column">
+      <div class="col s12 l6 carousel carousel-slider center scrollspy" id="tzuyu" >
+        <a href="#one!" class="carousel-item"><img src="img/tzucar1.jpg" alt=""></a>
+        <a href="#two!" class="carousel-item"><img src="img/tzucar2.jpg" alt=""></a>
+        <a href="#three!" class="carousel-item "><img src="img/tzucar3.jpg" alt=""></a>        
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h2 class="center tzu-text">TZUYU</h2>
+        <p class="center-align p-text">
+          Stage Name: Tzuyu (쯔위)
+          <br>
+          Birth Name: Chou Tzuyu (周子瑜)
+          <br>
+          Korean Name: Chou Tzu Yu (저우쯔위/주자유)
+          <br>
+          English Name: Sally
+          <br>
+          Nationality: Taiwanese
+          <br>
+          Position: Lead Dancer, Sub Vocalist, Visual, Maknae
+          <br>
+          Birthday: June 14, 1999
+          <br>
+          Zodiac Sign: Gemini
+          <br>
+          Height: 170 cm (5’7″)
+          <br>
+          Weight: 48 kg (106 lbs)
+          <br>
+          Blood Type: A
+          <br>
+          MBTI Type: ISFP-A
+          <br>
+          Representative Emoji: 🦌
+          <br>
+          
+          Instagram:  <a href="https://www.instagram.com/thinkaboutzu/" class="pink-text text-lighten-2" >thinkaboutzu</a></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </section> 
+  
+  
+  <!-- music video -->
+  <section class="container section ">
+    <h2 class="center pink-text text-lighten-2 scrollspy twice-text" id="videos">Music Videos:</h2>
+    <br>
+    <br>
+    <div class="row music-video">
+      <div class="col s12 l4 pull-s1">
+        <video width="415 px" controls poster="img/whatisthumbnail.jpg">
+          <source src="vid/y2mate.is - TWICE _What is Love__ M_V-i0p1bmr0EmE-720p-1695848666.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col s12 l6 push-l3">
+        <h4 class="center pink-text text-lighten-2 twice-text">What is love?</h4>
+        <p class="p-text">The song "What Is Love?" by TWICE is a relatable anthem for anyone who has yet to experience love. It's about wondering what love is, and speculating on the exact feeling of being in love and experiencing it for the first time. The music and lyrics explore the emotions of anticipation, curiosity and excitement of finding love, while also addressing the fear of being alone. The song's chorus captures the sentiment of questioning what love is and the desire to eventually find and experience it. As the song progresses, the members of TWICE sing about wanting to know and understand what love feels like, and dreaming of it coming into their lives soon.</p>
+            
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col s12 l4 push-l7 pull-s1">
+        <video width="415 px" controls poster="img/ttthumbnail.jpg">
+          <source src="vid/y2mate.is - TWICE _TT_ M_V-ePpPVE-GGJw-720p-1695848748.mp4" type="video/mp4">
+        </video>
+      </div>
+        
+      <div class="col s12 l6 pull-l5">
+        <h4 class="center pink-text text-lighten-2 twice-text">TT</h4>
+        <p class="right-align p-text">"TT" by TWICE is a song about inner conflict and struggling with emotions. The chorus talks about the narrator's feelings of helplessness and frustration, asking why they can't do things the way they want to. The verses talk about being unable to control their emotions and being overwhelmed, as well as wanting some kind of comfort from the person they love. In the end, the narrator admits that they're like "TT" - seemingly discussing their hopelessness and confusion - and asks for their partner's love and support. This song speaks to the difficulty of expressing emotions, and the inevitability of having to push through difficult times.</p>
+            
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col s12 l4 pull-s1">
+        <video width="415 px" controls poster="img/likeythumbnail.jpg">
+          <source src="vid/y2mate.is - TWICE _LIKEY_ M_V-V2hlQkVJZhE-720p-1695848791.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col s12 l6 push-l3">
+        <h4 class="center pink-text text-lighten-3 twice-text">LIKEY</h4>
+        <p class="p-text">"LIKEY" by TWICE is a song about being confident and declaring one's own worth. The song explores the idea of feeling uncertain and putting yourself out there, even if it feels intimidating. The chorus proclaims that "the words 'I like you' might be a cliche, but they don't fully express my feelings. Even if I can't sleep and can't come up with the words, that's enough." The chorus also talks about how twinges of self-doubt, especially with regards to one's physical appearance, can lead to hesitation. Through the song, TWICE encourages everyone to break the boundaries of self-doubt and embrace their inner beauty and worth.</p>
+            
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col s12 l4 push-l7 pull-s1">
+        <video width="415 px" controls poster="img/fancythumnail.jpg">
+          <source src="vid/y2mate.is - TWICE _FANCY_ M_V-kOHB85vDuow-720p-1695848883.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col s12 l6 pull-l5">
+        <h4 class="center pink-text text-lighten-3 twice-text">FANCY</h4>
+        <p class="right-align p-text">The song “FANCY” by TWICE describes a romantic attraction between two people. The lyrics compare their feeling to bright colors like tropical skies, red sunlight, and twinkling stars. They express their admiration for the other person, declaring their love and need for them and comparing it to a sweet indulgence. The chorus states, “You, I fancy you. I don’t want anybody else”, emphasizing that they only want the other person. Finally, the song closes by asking what will happen if one of them confesses their liking first. Overall, “FANCY” is a sweet, romantic song that portrays the love and admiration two people can feel for each other.</p>
+            
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col s12 l4 pull-s1">
+        <video width="415 px" controls poster="img/cheerupthumbnail2.jpg">
+          <source src="vid/y2mate.is - TWICE _CHEER UP_ M_V-c7rCyll5AeY-720p-1695849186.mp4" type="video/mp4">
+        </video>
+      </div>
+        
+      <div class="col s12 l6 push-l3">
+        <h4 class="center pink-text text-lighten-3 twice-text">Cheer up</h4>
+        <p class="p-text">The song "Cheer Up" by TWICE is a love song encouraging their significant other to stay strong in their relationship. The song speaks to the struggles of dating someone in today's world, such as feeling shy around them, the pressure of having to respond quickly to text messages, and wishing the other person could understand the love the singer feels for them. The song's message is to assure the other person that they are worth the fight, it's okay to take things slow, and that the singer will wait for them to express their own love in their own way. The chorus brings the theme of the song together by asking the listener to take it easy, never give up, and take their time in showing their love.</p>
+            
+      </div>
+    </div>      
+  </section>
+    <br>
+    <br>
+    <br>
+    
+   
+  <!-- awards -->
+  <section class="container section">  
+    <div class="column">
+      <h2 class="center pink-text text-lighten-2 scrollspy twice-text" id="awards">Awards:</h2>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#2015" class="indigo-text darken-4">2015</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#2016" class="indigo-text darken-4">2016</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#2017" class="indigo-text darken-4">2017</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#2018" class="indigo-text darken-4">2018</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#2019" class="indigo-text darken-4">2019</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#2020" class="indigo-text darken-4">2020</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#2021" class="indigo-text darken-4">2021</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#2022" class="indigo-text darken-4">2022</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#2023" class="indigo-text darken-4">2023</a>
+          </li>
+        </ul>
+        <div class="col s12" id="2015">
+          <p class="flow-text indigo-text text-darken-4 center">2015</p>
+          <p class="center-align p-text">
+            (2🏆)
+            <br>
+            🏆MAMA Awards🏆
+            <br>
+            Best New Female Artist
+            <br>
+            🏆Philippine K-POP Awards🏆
+            <br>
+            Female Rookie of the Year</p>
+        </div>
+        <div class="col s12" id="2016">
+          <p class="flow-text indigo-text text-darken-4 center">2016</p>
+          <P class="center-align p-text">
+            (10🏆)
+            <br>
+            🏆Asia Artist Awards🏆
+            <br>
+            Best Artist Award – Singer
+            <br>
+            🏆Golden Disc Awards🏆
+            <br>
+            Rookie of the Year Award
+            <br>
+            🏆Korea Cable TV Association Awards🏆
+            <br>
+            Best Singer Selected by Cable TV Music Producers
+            <br>
+            🏆Korean Consumer Forum Award🏆
+            <br>
+            Korea’s Brand of the Year
+            <br>
+            🏆MAMA Awards🏆
+            <br>
+            Best Female Group
+            <br>  
+            🏆Melon Music Awards🏆
+            <br>
+            Song of the Year “Cheer Up”
+            <br>
+            Top 10 Artists
+            <br>
+            🏆Philippine K-POP Awards🏆
+            <br>
+            Best Female Group
+            <br>
+            Song of the Year “Cheer Up”
+            <br>
+            🏆V LIVE Awards🏆
+            <br>
+            V Refreshing Youngster Award
+        </div>
+        <div class="col s12" id="2017">
+          <p class="flow-text indigo-text text-darken-4 center">2017</p>
+          <p class="center-align p-text">
+            (18🏆)
+            <br>
+            🏆Circle Chart Music Awards🏆
+            <br>
+            Song of the Year – April “Cheer Up”
+            <br>
+            Song of the Year – October “TT”
+            <br>
+            🏆Golden Disc Awards🏆
+            <br>
+            Digital Daesang “Cheer Up”
+            <br>
+            Digital Bonsang “Cheer Up”
+            <br>
+            🏆Korea Cable TV Association Awards🏆
+            <br>
+            Artist of the Year
+            <br>
+            🏆Korea PD Awards🏆
+            <br>
+            Performer of the Year (Daesang)
+            <br>
+            🏆MAMA Awards🏆
+            <br>
+            Best Female Group Dance Performance “Signal”
+            <br>
+            Song of the Year “Signal”
+            <br>
+            🏆Melon Music Awards🏆
+            <br>
+            Best Female Dance “Knock Knock”
+            <br>
+            Top 10 Artists
+            <br>
+            🏆Philippine K-POP Awards🏆
+            <br>
+            Song of the Year “Likey”
+            <br>
+            🏆Seoul Music Awards🏆
+            <br>
+            Record of the Year in Digital Release “Cheer Up”
+            <br>
+            Bonsang Award
+            <br>
+            Female Dance Performance Award
+            <br>
+            🏆Soompi Awards🏆
+            <br>
+            Best Female Group
+            <br>
+            🏆Soribada Best K-Music Awards🏆
+            <br>
+            Digital Daesang Award
+            <br>
+            Bonsang Award
+            <br>
+            🏆V LIVE Awards🏆
+            <br>
+            Global Artist Top 10</p>
+        </div>
+        <div class="col s12" id="2018">
+          <p class="flow-text indigo-text text-darken-4 center">2018</p>
+          <p class="center-align p-text">
+            (31🏆)
+            <br>
+            🏆Asia Artist Awards🏆
+            <br>
+            Fabulous Singer Award
+            <br>
+            Music Artist of the Year
+            <br>
+            Best Singer Artist Award
+            <br>
+            🏆Circle Chart Music Awards🏆
+            <br>
+            Song of the Year – February “Knock Knock”
+            <br>
+            Song of the Year – December “Heart Shaker”
+            <br>
+            🏆The Fact Music Awards🏆
+            <br>
+            Artist of the Year (Bonsang)
+            <br>
+            Worldwide Icon
+            <br>
+            🏆Genie Music Awards🏆
+            <br>
+            The Best Selling Artist
+            <br>
+            The Female Group
+            <br>
+            Best Global Performance
+            <br>
+            🏆Golden Disc Awards🏆
+            <br>
+            Album Bonsang “Twicetagram”
+            <br>
+            Digital Bonsang “Knock Knock”
+            <br>
+            CeCi Asia Icon Award
+            <br>
+            🏆Japan Gold Disc Awards🏆
+            <br>
+            New Artist of the Year (Asia)
+            <br>
+            Best 3 New Artist (Asia)
+            <br>
+            Album of the Year (Asia) “#Twice”
+            <br>
+            Best 3 Albums (Asia) “#Twice”
+            <br>
+            Song of the Year by Download (Asia) “TT (Japanese ver.)”
+            <br>
+            🏆Japan Record Awards🏆
+            <br>
+            Best Song Award “Wake Me Up”
+            <br>
+            🏆Korea Popular Music Awards🏆
+            <br>
+            Bonsang Award
+            <br>
+            Best Digital Song “Heart Shaker”
+            <br>
+            🏆MAMA Awards🏆
+            <br>
+            Best Female Group Dance Performance “What Is Love?”
+            <br>
+            Best Female Group
+            <br>
+            Favorite Female Dance Artist
+            <br>
+            Song of the Year “What Is Love?”
+            <br>
+            Worldwide Fans’ Choice Top 10
+            <br>
+            🏆Melon Music Awards🏆
+            <br>
+            Top 10 Artists
+            <br>
+            🏆Seoul Music Awards🏆
+            <br>
+            Bonsang Award
+            <br>
+            🏆Soribada Best K-Music Awards🏆
+            <br>
+            Digital Daesang Award
+            <br>
+            Bonsang Award
+            <br>
+            🏆V LIVE Awards🏆
+            <br>
+            Global Artist Top 10</p>
+        </div>
+        <div class="col s12" id="2019">
+          <p class="flow-text indigo-text text-darken-4 center">2019</p>
+          <p class="center-align p-text">
+            (24🏆)
+            <br>
+            🏆Asia Artist Awards🏆
+            <br>
+            Artist of the Year (Daesang)
+            <br>
+            Best Social Music Artist Award
+            <br>
+            🏆Circle Chart Music Awards🏆
+            <br>
+            Song of the Year – April “What Is Love?”
+            <br>
+            Song of the Year – July “Dance the Night Away”
+            <br>
+            🏆The Fact Music Awards🏆
+            <br>
+            Artist of the Year (Bonsang)
+            <br>
+            🏆Genie Music Awards🏆
+            <br>
+            The Best Selling Artist
+            <br>
+            The Female Group
+            <br>
+            🏆Golden Disc Awards🏆
+            <br>
+            Album Bonsang “What Is Love?”
+            <br>
+            Digital Bonsang “Heart Shaker”
+            <br>
+            🏆Japan Gold Disc Awards🏆
+            <br>
+            Best 3 Albums (Asia) “BDZ”
+            <br>
+            Song of the Year by Download (Asia) “Candy Pop”
+            <br>
+            🏆Korean Ministry of Culture, Sports and Tourism🏆
+            <br>
+            Hallyu Culture Grand Prize
+            <br>
+            🏆MAMA Awards🏆
+            <br>
+            Best Female Group Dance Performance “Fancy”
+            <br>
+            Best Female Group
+            <br>
+            Worldwide Fans’ Choice Top 10
+            <br>
+            2019 Qoo10 Favorite Female Artist
+            <br>
+            🏆Philippine K-POP Awards🏆
+            <br>
+            Best Female Group
+            <br>
+            🏆Seoul Music Awards🏆
+            <br>
+            Bonsang Award
+            <br>
+            🏆Soribada Best K-Music Awards🏆
+            <br>
+            Music of the Year
+            <br>
+            Bonsang Award
+            <br>
+            Female Popularity Award
+            <br>
+            🏆V LIVE Awards🏆
+            <br>
+            Artist Top 10
+            <br>
+            Best Channel – 3 million followers
+            <br>
+            Global Artist Top 12</p>
+        </div>
+        <div class="col s12" id="2020">
+          <p class="flow-text indigo-text text-darken-4 center">2020</p>
+          <p class="center-align p-text">
+            (17🏆)
+            <br>
+            🏆Asia Artist Awards🏆
+            <br>
+            Popularity Award Female Singer
+            <br>
+            Artist of the Year (Daesang)
+            <br>
+            🏆Bugs Music Awards🏆
+            <br>
+            20th Anniversary Awards – Most Loved Music “Cheer Up” & “TT”
+            <br>
+            20th Anniversary Awards – Most Loved Artists
+            <br>
+            🏆The Fact Music Awards🏆
+            <br>
+            Artist of the Year (Bonsang)
+            <br>
+            🏆Golden Disc Awards🏆
+            <br>
+            Album Bonsang “Feel Special”
+            <br>
+            Digital Bonsang “Yes or Yes”
+            <br>
+            Cosmopolitan Artist Award
+            <br>
+            🏆Japan Gold Disc Awards🏆
+            <br>
+            Best 3 Albums (Asia) “&Twice” & “#Twice2”
+            <br>
+            Album of the Year (Asia) “#Twice2”
+            <br>
+            🏆MAMA Awards🏆
+            <br>
+            Most Popular Artist
+            <br>
+            Worldwide Fans’ Choice Top 10
+            <br>
+            🏆Seoul Music Awards🏆
+            <br>
+            Bonsang Award
+            <br>
+            🏆Shorty Awards🏆
+            <br>
+            Best in Music
+            <br>
+            🏆Soribada Best K-Music Awards🏆
+            <br>
+            Artist of the Year
+            <br>
+            Bonsang Award
+            <br>
+            New K-Wave Favorite Female Bias</p>
+        </div>
+        <div class="col s12" id="2021">
+          <p class="flow-text indigo-text text-darken-4 center">2021</p>
+          <p class="center-align p-text">
+            (8🏆)
+            <br>
+            🏆APAN Music Awards🏆
+            <br>
+            APAN Top 10 (Bonsang)
+            <br>
+            Represent Record of the Year
+            <br>
+            🏆Asia Artist Awards🏆
+            <br>
+            RET Popularity Award – Female Singer
+            <br>
+            🏆Edaily Culture Awards🏆
+            <br>
+            Best Concert Award “TWICE: World in a Day”
+            <br>
+            🏆Golden Disc Awards🏆
+            <br>
+            Album Bonsang “More & More”
+            <br>
+            🏆MAMA Awards🏆
+            <br>
+            Best Female Group
+            <br>
+            Worldwide Fans’ Choice Top 10
+            <br>
+            🏆Seoul Music Awards🏆
+            <br>
+            Bonsang Award</p>
+        </div>
+        <div class="col s12" id="2022">
+          <p class="flow-text indigo-text text-darken-4 center">2022</p>
+          <p class="center-align p-text">
+            (1🏆)
+            <br>
+            🏆Circle Chart Music Awards🏆
+            <br>
+            Song of the Year – November “Scientist“</p>
+        </div>
+        <div class="col s12" id="2023">
+          <p class="flow-text indigo-text text-darken-4 center">2023</p>
+          <p class="center-align p-text">
+            (1🏆)
+            <br>
+            🏆Billboard Women in Music🏆
+            <br>
+            Breakthrough Award</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+
+  
+  <!-- footer -->
+  <footer class="page-footer">
+    <div class=" container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5 class="twice-text">About TWICE</h5>
+          <p class="p-text">TWICE (트와이스) is a girl group consisting of 9 members: Jihyo, Nayeon, Jeongyeon, Momo, Sana, Mina, Dahyun, Chaeyoung, and Tzuyu. The group debuted on October 20, 2015, through the survival show Sixteen, under JYP Entertainment. As of February 2020, JYPE is partnering with Republic Records to help promote TWICE worldwide.</p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5 class="twice-text">Connect</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/twicetagram/" class="p-text">Instagram</a></li>
+            <li><a href="https://web.facebook.com/JYPETWICE" class="p-text">Facebook</a></li>
+            <li><a href="https://x.com/JYPETWICE?s=20" class="p-text">Twitter</a></li>
+            <li><a href="https://www.youtube.com/@TWICE" class="p-text">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright light-blue darken-2">
+      <div class="container center-align">&copy; 2023 JAR ENTERTAINMENT</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox()
+      $('.parallax').parallax()
+      $('.tabs').tabs()
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      })
+      $('.tooltipped').tooltip()
+      $('.scrollspy').scrollSpy()
+      $('.carousel.carousel-slider').carousel({
+        indicators: true,      
+      })
+      $('video').on('play', function(){
+        $('video').not(this).each(function(){
+          this.pause();
+        });
+      })
+      
+      
+    });
+  </script>
+</body>
+</html> 
